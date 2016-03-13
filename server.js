@@ -3,10 +3,16 @@ var app = express();
 var path = require('path');
 
 /* view at http://localhost:8080 */
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
+
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    // res.sendFile(path.join(__dirname + '/index.html'));
+    res.render('index')
 });
 
-app.use(express.static('public'));
 
-app.listen(8080);
+
+
+
+// app.listen(8080);
