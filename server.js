@@ -11,8 +11,8 @@ app.get('/', function(req, res) {
     
 });
 
-app.listen(port, function(){
-    console.log('Service started on port :' + port);
-});
+// app.listen(port, function(){
+//     console.log('Service started on port :' + port);
+// });
 
-// app.listen(8080);
+app.listen(8080);
